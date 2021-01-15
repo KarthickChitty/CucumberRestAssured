@@ -1,7 +1,8 @@
 package hooks;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+
+import io.cucumber.java.Scenario;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 
 public class Hooks {
 	protected Scenario scn;
@@ -13,7 +14,7 @@ public class Hooks {
 
 	@After
 	public void AfterHook() {
-		scn.write("Scenario is completed with Status: " + scn.getStatus());
+		System.out.println("Scenario is completed with Status: " + scn.getStatus());
 	}
 	
 }
