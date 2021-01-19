@@ -22,12 +22,6 @@ public class StepDefinitions {
 		_REQ_SPEC  = given().baseUri(baseUri);
 	}
 
-	@When("I perfrom a {string} method on endpoint {string}")
-	public void i_perfrom_a_method(String method, String empEndPoint) {
-		_RESP_     = _REQ_SPEC.when().get(empEndPoint);
-		System.out.println("_RESP_:" + _RESP_.asString());
-
-	}
 
 	@Then("I should be able to get response for {int} employee details")
 	public void i_should_be_able_to_veiew_all_employee_details(Integer empCount) {

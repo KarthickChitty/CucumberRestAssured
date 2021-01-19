@@ -12,7 +12,8 @@ import io.cucumber.junit.*;
 		
 		plugin = {"pretty", "html: test-output/cucumberreprot.html"
 		},
-				tags = "@employees"
+				tags = "@CURD",
+				dryRun=false
 				
 		)
 		
