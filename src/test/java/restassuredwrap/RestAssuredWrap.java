@@ -4,13 +4,11 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
 import java.io.File;
-import java.util.HashMap;
 
 import hooks.Hooks;
 import io.restassured.filter.session.SessionFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 

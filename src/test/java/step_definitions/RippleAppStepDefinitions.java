@@ -1,7 +1,6 @@
 package step_definitions;
 
 
-import io.cucumber.java.Scenario;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -10,17 +9,16 @@ import restassuredwrap.RestAssuredWrap;
 
 
 import java.io.File;
-
-import hooks.Hooks;
 import hooks.Props;
 
 public class RippleAppStepDefinitions {
-	//"http://localhost:8083";
+	
 	static Props properties = new Props();
-	File jsonDataInFile = new File("src/test/resources/Payloads/createUser.json");
 	static String baseUri = properties.fetchBaseURI();
 	static String index = properties.fetchEndpoint("index");
 	static String logoutEndpoint = properties.fetchEndpoint("logout");
+	String createUserFilePath = properties.fetchcreateuserjsonpath();
+	File jsonDataInFile = new File(createUserFilePath);
 	RestAssuredWrap restAssured = new RestAssuredWrap();
 	
 	@Given("rippleapp scope session is up and running")

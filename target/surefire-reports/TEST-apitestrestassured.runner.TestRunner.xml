@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="13" failures="0" name="apitestrestassured.runner.TestRunner" time="0.028" errors="0" skipped="13">
+<testsuite tests="3" failures="1" name="apitestrestassured.runner.TestRunner" time="2.311" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="15.0.1+9-18"/>
@@ -25,9 +25,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\us-guest\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf12107137803813207801.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\us-guest\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf10091952682128675769.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\us-guest\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/us-guest/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Users/us-guest/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:/Users/us-guest/AppData/Local/Temp/eoi55EB.tmp//plugins/org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Users/us-guest/AppData/Local/Temp/eoi55EB.tmp//plugins/org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Users\us-guest\AppData\Local\Microsoft\WindowsApps;;C:\Users\us-guest\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\us-guest\Downloads;;C:\Users\us-guest\Downloads;;."/>
+    <property name="java.library.path" value="C:\Users\us-guest\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/us-guest/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin/server;C:/Users/us-guest/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\apache-maven-3.6.3;C:\Users\us-guest\AppData\Local\Microsoft\WindowsApps;C:\Users\us-guest\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files (x86)\Java\apache-maven-3.6.3\bin;;C:\;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="59.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -56,43 +56,134 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="search functionality" name="Do a search from home page" time="0.004">
-    <skipped/>
+  <testcase classname="Application scope and Create/Update/Read/Delete options feature validation" name="Verify session scope value gets retained and destroyed when session ends" time="2.076"/>
+  <testcase classname="Application scope and Create/Update/Read/Delete options feature validation" name="Verify application scope value gets retained and not destroyed when session ends" time="0.072">
+    <failure message="1 expectation failed.
+JSON path previousMessage doesn&apos;t match.
+Expected: null
+  Actual: Karthiga
+" type="java.lang.AssertionError">java.lang.AssertionError: 1 expectation failed.
+JSON path previousMessage doesn&apos;t match.
+Expected: null
+  Actual: Karthiga
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at restassuredwrap.RestAssuredWrap.assertBodyMsg(RestAssuredWrap.java:53)
+	at step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(RippleAppStepDefinitions.java:76)
+	at ✽.I should see session previous message &quot;null&quot;(classpath:features/rippleapp.feature:27)
+</failure>
+    <system-out>
+@Scope_and_CURD @applicationscope @scope
+Scenario: Verify application scope value gets retained and not destroyed when session ends &amp;#27;[90m# features/rippleapp.feature:23&amp;#27;[0m
+
+    getMethod worked for endpoint: /ripple/index
+
+
+    Response Status code for: 200 validated
+
+  &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mrippleapp scope session is up and running&amp;#27;[0m                                          &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.rippleapp_scope_session_is_up_and_running()&amp;#27;[0m
+
+    getMethod worked for endpoint: /ripple/scope/application
+
+
+    Response Status code for: 200 validated
+
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI perfrom a &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;GET&quot;&amp;#27;[0m&amp;#27;[32m method on endpoint &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;ScopeApplication&quot;&amp;#27;[0m                             &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp;#27;[0m
+
+    Expected value Karthiga for key currentMessage found
+
+  &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI should see session current message &amp;#27;[0m&amp;#27;[32m&amp;#27;[1m&quot;Karthiga&quot;&amp;#27;[0m                                     &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI should see session previous message &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m&quot;null&quot;&amp;#27;[0m                                         &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError: 1 expectation failed.
+JSON path previousMessage doesn&apos;t match.
+Expected: null
+  Actual: Karthiga
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:261)
+	at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:108)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
+	at io.restassured.internal.ValidatableResponseImpl.super$2$body(ValidatableResponseImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1268)
+	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy:298)
+	at io.restassured.internal.ValidatableResponseImpl.body(ValidatableResponseImpl.groovy)
+	at restassuredwrap.RestAssuredWrap.assertBodyMsg(RestAssuredWrap.java:53)
+	at step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(RippleAppStepDefinitions.java:76)
+	at âœ½.I should see session previous message &quot;null&quot;(classpath:features/rippleapp.feature:27)
+&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI perfrom a &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;GET&quot;&amp;#27;[0m&amp;#27;[36m method on endpoint &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;ScopeApplication&quot;&amp;#27;[0m                             &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI should see session current message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Karthiga&quot;&amp;#27;[0m                                     &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI should see session previous message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Karthiga&quot;&amp;#27;[0m                                     &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI logout from the session&amp;#27;[0m                                                           &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_logout_from_the_session()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI perfrom a &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;GET&quot;&amp;#27;[0m&amp;#27;[36m method on endpoint &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;ScopeApplication&quot;&amp;#27;[0m                              &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI should see session current message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Karthiga&quot;&amp;#27;[0m                                     &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI should see session previous message &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Karthiga&quot;&amp;#27;[0m                                     &amp;#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp;#27;[0m
+</system-out>
   </testcase>
-  <testcase classname="search functionality" name="Do a search from home page" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Do a search from home page" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Do a search from home page" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Do a search from home page" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Do a search from home page" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Do a search from home page" time="0.004">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Title of your scenario outline" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Title of your scenario outline" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Title of your scenario outline" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Title of your scenario outline" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Title of your scenario outline" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="search functionality" name="Title of your scenario outline" time="0">
-    <skipped/>
-  </testcase>
+  <testcase classname="Application scope and Create/Update/Read/Delete options feature validation" name="Verify application create user creats an entry" time="0.163"/>
 </testsuite>

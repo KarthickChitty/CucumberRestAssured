@@ -8,7 +8,6 @@ import java.util.Properties;
 
 public class Props {
 	private Properties property = new Properties();
-//	private final String propertyFilePath= "/src/test/resources/configs/configuration.properties";
 	private final String propertyFilePath = "configs/configuration.properties";
 	
 	public Props() {
@@ -57,6 +56,10 @@ public class Props {
 	
 	public String fetchBaseURI() {
 		return property.getProperty("baseUri");
+	}
+
+	public String fetchcreateuserjsonpath() {
+		return property.getProperty("creatUserJson");
 	}
 	
 
