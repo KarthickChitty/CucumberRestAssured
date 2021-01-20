@@ -1,20 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: apitestrestassured.runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.627 s <<< FAILURE! - in apitestrestassured.runner.Runner
-Application scope and Create/Update/Read/Delete options feature validation.Verify application create user creats an entry  Time elapsed: 1.165 s  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.121 s <<< FAILURE! - in apitestrestassured.runner.Runner
+Application scope and Create/Update/Read/Delete options feature validation.Verify application create user creats an entry  Time elapsed: 1.566 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
-The step "I perfrom a "POST" method on endpoint "/ripple/users"" is undefined. You can implement it using the snippet(s) below:
+The step "I perform a "GET" method on endopoint "GetUser"" is undefined. You can implement it using the snippet(s) below:
 
-@When("I perfrom a {string} method on endpoint {string}")
-public void i_perfrom_a_method_on_endpoint(String string, String string2, io.cucumber.datatable.DataTable dataTable) {
+@When("I perform a {string} method on endopoint {string}")
+public void i_perform_a_method_on_endopoint(String string, String string2) {
     // Write code here that turns the phrase above into concrete actions
-    // For automatic transformation, change DataTable to one of
-    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
-    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
-    // Double, Byte, Short, Long, BigInteger or BigDecimal.
-    //
-    // For other transformations you can register a DataTableType.
     throw new io.cucumber.java.PendingException();
 }
 

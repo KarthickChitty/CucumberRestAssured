@@ -12,12 +12,10 @@ import io.cucumber.junit.*;
 		
 		plugin = {"pretty", "html: test-output/cucumberreprot.html"
 		},
-				tags = "@CURD",
+				tags = "@Scope_and_CURD",
 				dryRun=false
 				
 		)
-		
-
 public class Runner {
 
 }
