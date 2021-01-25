@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="apitestrestassured.runner.Runner" time="2.121" tests="1" errors="1" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="apitestrestassured.runner.Runner" time="0.712" tests="3" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\us-guest\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.1.v20201027-0507\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\us-guest\AppData\Local\Temp\surefire9267744104912624618\surefirebooter16864461030271909950.jar C:\Users\us-guest\AppData\Local\Temp\surefire9267744104912624618 2021-01-19T22-26-27_102-jvmRun1 surefire2874155655726763018tmp surefire_010483814941454681851tmp"/>
+    <property name="sun.java.command" value="C:\Users\us-guest\AppData\Local\Temp\surefire544021390441234117\surefirebooter12837691736126542718.jar C:\Users\us-guest\AppData\Local\Temp\surefire544021390441234117 2021-01-20T14-47-19_065-jvmRun1 surefire9144065607955863833tmp surefire_09029483764836011989tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\us-guest\eclipse-workspace\apitestrestassured\target\test-classes;C:\Users\us-guest\eclipse-workspace\apitestrestassured\target\classes;C:\Users\us-guest\.m2\repository\io\cucumber\cucumber-java\6.8.1\cucumber-java-6.8.1.jar;C:\Users\us-guest\.m2\repository\io\cucumber\cucumber-core\6.8.1\cucumber-core-6.8.1.jar;C:\Users\us-guest\.m2\repository\io\cucumber\cucumber-gherkin\6.8.1\cucumber-gherkin-6.8.1.jar;C:\Users\us-guest\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.8.1\cucumber-gherkin-messages-6.8.1.jar;C:\Users\us-guest\.m2\repository\io\cucumber\messages\13.1.0\messages-13.1.0.jar;C:\Users\us-guest\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\us-guest\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\us-guest\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\us-guest\.m2\repository\io\cucumber\cucumber-plugin\6.8.1\cucumber-plugin-6.8.1.jar;C:\Users\us-guest\.m2\repository\io\cucumber\docstring\6.8.1\docstring-6.8.1.jar;C:\Users\us-guest\.m2\repository\io\cucumber\html-formatter\9.0.0\html-formatter-9.0.0.jar;C:\Users\us-guest\.m2\repository\io\cucumber\create-meta\2.0.2\create-meta-2.0.2.jar;C:\Users\us-guest\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\us-guest\.m2\repository\io\cucumber\cucumber-junit\6.8.1\cucumber-junit-6.8.1.jar;C:\Users\us-guest\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\us-guest\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\us-guest\.m2\repository\io\rest-assured\rest-assured\4.3.3\rest-assured-4.3.3.jar;C:\Users\us-guest\.m2\repository\org\codehaus\groovy\groovy\3.0.7\groovy-3.0.7.jar;C:\Users\us-guest\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.7\groovy-xml-3.0.7.jar;C:\Users\us-guest\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\us-guest\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\us-guest\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\us-guest\.m2\repository\commons-codec\commons-codec\1.9\commons-codec-1.9.jar;C:\Users\us-guest\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\us-guest\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\us-guest\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\us-guest\.m2\repository\io\rest-assured\json-path\4.3.3\json-path-4.3.3.jar;C:\Users\us-guest\.m2\repository\org\codehaus\groovy\groovy-json\3.0.7\groovy-json-3.0.7.jar;C:\Users\us-guest\.m2\repository\io\rest-assured\rest-assured-common\4.3.3\rest-assured-common-4.3.3.jar;C:\Users\us-guest\.m2\repository\io\rest-assured\xml-path\4.3.3\xml-path-4.3.3.jar;C:\Users\us-guest\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\us-guest\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\us-guest\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\us-guest\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\us-guest\AppData\Local\Temp\surefire9267744104912624618\surefirebooter16864461030271909950.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\us-guest\AppData\Local\Temp\surefire544021390441234117\surefirebooter12837691736126542718.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="15.0.1+9-18"/>
@@ -55,37 +55,59 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="Verify application create user creats an entry" classname="Application scope and Create/Update/Read/Delete options feature validation" time="1.566">
-    <error message="The step &quot;I perform a &quot;GET&quot; method on endopoint &quot;GetUser&quot;&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@When(&quot;I perform a {string} method on endopoint {string}&quot;)&#10;public void i_perform_a_method_on_endopoint(String string, String string2) {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
-The step "I perform a "GET" method on endopoint "GetUser"" is undefined. You can implement it using the snippet(s) below:
+  <testcase name="Verify session scope value gets retained and destroyed when session ends" classname="Application scope and Create/Update/Read/Delete options feature validation" time="0.148">
+    <system-out><![CDATA[
+@Scope_and_CURD @sessionscope @scope
+Scenario: Verify session scope value gets retained and destroyed when session ends &amp#27;[90m# features/rippleapp.feature:9&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mrippleapp scope session is up and running&amp#27;[0m                                  &amp#27;[90m# step_definitions.RippleAppStepDefinitions.rippleapp_scope_session_is_up_and_running()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI perfrom a &amp#27;[0m&amp#27;[32m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[32m method on endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"ScopeSession"&amp#27;[0m                         &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see session current message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Karthiga"&amp#27;[0m                             &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI should see session previous message &amp#27;[0m&amp#27;[32m&amp#27;[1m"null"&amp#27;[0m                                 &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI perfrom a &amp#27;[0m&amp#27;[32m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[32m method on endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"ScopeSession"&amp#27;[0m                         &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see session current message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Karthiga"&amp#27;[0m                             &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI should see session previous message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Karthiga"&amp#27;[0m                             &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI logout from the session&amp#27;[0m                                                   &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_logout_from_the_session()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI perfrom a &amp#27;[0m&amp#27;[32m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[32m method on endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"ScopeSession"&amp#27;[0m                          &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see session current message &amp#27;[0m&amp#27;[32m&amp#27;[1m"Karthiga"&amp#27;[0m                             &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mI should see session previous message &amp#27;[0m&amp#27;[32m&amp#27;[1m"null"&amp#27;[0m                                 &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify application scope value gets retained and not destroyed when session ends" classname="Application scope and Create/Update/Read/Delete options feature validation" time="0.046">
+    <error message="The step &quot;rippleapp scope session is up and running Test&quot; is undefined. You can implement it using the snippet(s) below:&#10;&#10;@Given(&quot;rippleapp scope session is up and running Test&quot;)&#10;public void rippleapp_scope_session_is_up_and_running_test() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step "rippleapp scope session is up and running Test" is undefined. You can implement it using the snippet(s) below:
 
-@When("I perform a {string} method on endopoint {string}")
-public void i_perform_a_method_on_endopoint(String string, String string2) {
+@Given("rippleapp scope session is up and running Test")
+public void rippleapp_scope_session_is_up_and_running_test() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
 
 ]]></error>
     <system-out><![CDATA[
+@Scope_and_CURD @applicationscope @scope
+Scenario: Verify application scope value gets retained and not destroyed when session ends &amp#27;[90m# features/rippleapp.feature:23&amp#27;[0m
+  &amp#27;[33mGiven &amp#27;[0m&amp#27;[33mrippleapp scope session is up and running Test&amp#27;[0m                                     &amp#27;[90m# null&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI perfrom a &amp#27;[0m&amp#27;[36m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[36m method on endpoint &amp#27;[0m&amp#27;[36m&amp#27;[1m"ScopeApplication"&amp#27;[0m                             &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see session current message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Karthiga"&amp#27;[0m                                     &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see session previous message &amp#27;[0m&amp#27;[36m&amp#27;[1m"null"&amp#27;[0m                                         &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI perfrom a &amp#27;[0m&amp#27;[36m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[36m method on endpoint &amp#27;[0m&amp#27;[36m&amp#27;[1m"ScopeApplication"&amp#27;[0m                             &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see session current message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Karthiga"&amp#27;[0m                                     &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see session previous message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Karthiga"&amp#27;[0m                                     &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mI logout from the session&amp#27;[0m                                                           &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_logout_from_the_session()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI perfrom a &amp#27;[0m&amp#27;[36m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[36m method on endpoint &amp#27;[0m&amp#27;[36m&amp#27;[1m"ScopeApplication"&amp#27;[0m                              &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see session current message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Karthiga"&amp#27;[0m                                     &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_current_message(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mI should see session previous message &amp#27;[0m&amp#27;[36m&amp#27;[1m"Karthiga"&amp#27;[0m                                     &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_session_previous_message(java.lang.String)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Verify application create user creats an entry" classname="Application scope and Create/Update/Read/Delete options feature validation" time="0.012">
+    <system-out><![CDATA[
 @Scope_and_CURD @createUser @CURD
 Scenario: Verify application create user creats an entry  &amp#27;[90m# features/rippleapp.feature:38&amp#27;[0m
-
-    getMethod worked for endpoint: /ripple/index
-
-
-    Response Status code for: 200 validated
-
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mrippleapp scope session is up and running&amp#27;[0m         &amp#27;[90m# step_definitions.RippleAppStepDefinitions.rippleapp_scope_session_is_up_and_running()&amp#27;[0m
-
-    Post operation performed..
-
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI perfrom a &amp#27;[0m&amp#27;[32m&amp#27;[1m"POST"&amp#27;[0m&amp#27;[32m method on endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"CreateUser"&amp#27;[0m &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
-
-    Response Status code for: 201 validated
-
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see new user got added&amp#27;[0m                    &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_new_user_got_added()&amp#27;[0m
-  &amp#27;[33mWhen &amp#27;[0m&amp#27;[33mI perform a "GET" method on endopoint "GetUser"&amp#27;[0m    &amp#27;[90m# null&amp#27;[0m
-  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mI should see new user as part of response&amp#27;[0m          &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_new_user_as_part_of_response()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI perfrom a &amp#27;[0m&amp#27;[32m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[32m method on endpoint &amp#27;[0m&amp#27;[32m&amp#27;[1m"GetUser"&amp#27;[0m     &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_perfrom_a_method(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see new user as part of response&amp#27;[0m          &amp#27;[90m# step_definitions.RippleAppStepDefinitions.i_should_see_new_user_as_part_of_response()&amp#27;[0m
 ]]></system-out>
   </testcase>
 </testsuite>

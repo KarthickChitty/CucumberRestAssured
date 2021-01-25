@@ -7,17 +7,30 @@ import io.cucumber.java.en.When;
 import io.restassured.http.ContentType;
 import restassuredwrap.RestAssuredWrap;
 
-
 import java.io.File;
+
 import hooks.Props;
 
 public class RippleAppStepDefinitions {
 	
+
 	static Props properties = new Props();
-	static String baseUri = properties.fetchBaseURI();
-	static String index = properties.fetchEndpoint("index");
-	static String logoutEndpoint = properties.fetchEndpoint("logout");
-	String createUserFilePath = properties.fetchcreateuserjsonpath();
+	/*
+	 * @Value("${baseuri}") static String baseUri;
+	 * 
+	 * @Value("${rippleIndexEndPoint}") static String index;
+	 * 
+	 * @Value("${rippleLogoutEndpoint}") static String logoutEndpoint;
+	 * 
+	 * @Value("$creatUserJson}") static String createUserFilePath;
+	 */
+	
+	
+	 static String baseUri = properties.fetchBaseURI();
+	 static String index = properties.fetchEndpoint("index");
+	 static String logoutEndpoint = properties.fetchEndpoint("logout");
+	 String createUserFilePath = properties.fetchcreateuserjsonpath();
+		
 	File jsonDataInFile = new File(createUserFilePath);
 	RestAssuredWrap restAssured = new RestAssuredWrap();
 	

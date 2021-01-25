@@ -5,6 +5,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 import java.io.File;
 
+//import org.springframework.beans.factory.annotation.Value;
+
 import hooks.Hooks;
 import io.restassured.filter.session.SessionFilter;
 import io.restassured.http.ContentType;
@@ -14,6 +16,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class RestAssuredWrap {
 	
+
 	static RequestSpecification reqSpec;
 	static Response resp;
 	static ValidatableResponse valResp;
@@ -25,6 +28,7 @@ public class RestAssuredWrap {
 				.filter(sessionFilter)
 				.baseUri(baseURI);
 	}
+	
 	public void getMethod(String getEndpoint) {
 		try {
 			resp = reqSpec

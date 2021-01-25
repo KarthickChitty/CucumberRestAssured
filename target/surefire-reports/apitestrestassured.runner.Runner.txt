@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: apitestrestassured.runner.Runner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.121 s <<< FAILURE! - in apitestrestassured.runner.Runner
-Application scope and Create/Update/Read/Delete options feature validation.Verify application create user creats an entry  Time elapsed: 1.566 s  <<< ERROR!
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.712 s <<< FAILURE! - in apitestrestassured.runner.Runner
+Application scope and Create/Update/Read/Delete options feature validation.Verify application scope value gets retained and not destroyed when session ends  Time elapsed: 0.046 s  <<< ERROR!
 io.cucumber.junit.UndefinedStepException: 
-The step "I perform a "GET" method on endopoint "GetUser"" is undefined. You can implement it using the snippet(s) below:
+The step "rippleapp scope session is up and running Test" is undefined. You can implement it using the snippet(s) below:
 
-@When("I perform a {string} method on endopoint {string}")
-public void i_perform_a_method_on_endopoint(String string, String string2) {
+@Given("rippleapp scope session is up and running Test")
+public void rippleapp_scope_session_is_up_and_running_test() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
